@@ -1,10 +1,21 @@
-/vendor/
+# Dependencies
 /node_modules/
+/vendor/
+
+# Build output
 /public/assets/css/app.css
+
+# Environment files
+.env
+
+# Logs & Cache
 /storage/logs/*
 !/storage/logs/.gitkeep
 /storage/cache/*
 !/storage/cache/.gitkeep
-.env
 
+# ===== DATABASE =====
+*.sql
+
+# OS generated files
 .DS_Store
