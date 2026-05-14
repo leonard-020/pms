@@ -1,0 +1,10 @@
+/vendor/
+/node_modules/
+/public/assets/css/app.css
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/cache/*
+!/storage/cache/.gitkeep
+.env
+*.sql
+.DS_Store

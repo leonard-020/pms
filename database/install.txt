@@ -1,0 +1,47 @@
+MariaDB [parish_db]> SOURCE C:/xampp/htdocs/pms/database/schema.sql;
+MariaDB [parish_db]> SOURCE C:/xampp/htdocs/pms/database/seeds.sql;
+
+
+
+
+
+
+
+
+# 1. Create the database
+mysql -u root -p -e "CREATE DATABASE parish_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+# 2. Import schema and seeds
+mysql -u root -p parish_db < database/schema.sql
+mysql -u root -p parish_db < database/seeds.sql
+
+# 3. Install Node dependencies
+npm install
+
+# 4. Build Tailwind CSS for production
+npm run build
+
+# 5. Configure virtual host (Apache example)
+# DocumentRoot: /path/to/pms/public
+# AllowOverride: All
+
+# 6. Set file permissions
+chmod -R 755 storage/
+chmod -R 755 public/
+
+# 7. Copy .env and configure
+cp .env.example .env
+# Edit .env with your database credentials
+
+# 8. Generate a fresh password hash for production
+php -r "echo password_hash('YourSecurePassword!', PASSWORD_BCRYPT);"
+# Update the hash in the users table
+
+# 9. For development (watch mode)
+npm run dev
+
+
+
+
+
+
