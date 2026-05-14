@@ -6,5 +6,5 @@
 /storage/cache/*
 !/storage/cache/.gitkeep
 .env
-*.sql
+
 .DS_Store
