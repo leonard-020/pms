@@ -1,5 +1,10 @@
 MariaDB [parish_db]> SOURCE C:/xampp/htdocs/pms/database/schema.sql;
 MariaDB [parish_db]> SOURCE C:/xampp/htdocs/pms/database/seeds.sql;
+npm install
+    It must show number of packages installed and audited
+npm run build
+    It must show Rebuild and finally done.
+Run php fix_password.php
 
 
 
